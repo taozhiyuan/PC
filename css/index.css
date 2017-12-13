@@ -4,6 +4,7 @@
 body > header {
 	height: 85px;
 	background-color: white;
+	z-index: 1;
 }
 	div.head-logo{
 		float: left;
