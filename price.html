@@ -328,7 +328,7 @@
 	<section class="apply-offer currency">
         <div class="main">
 			<h1>申请快速报价</h1>
-			<label for="user-name">商标注册类型</label>
+			<label>商标注册类型</label>
 			<select name="registration-type">
 				<option value="创业包">创业包</option>
 				<option value="创业包">成长包</option>
@@ -336,7 +336,14 @@
 				<option value="创业包">计划包</option>
 				<option value="创业包">防护包</option>
 			</select>
-			<label for="user-name">最佳回电时间</label>
+			<br>
+            <label for="user-name">* 姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</label>
+			<input type="text" name="name" id="user-name" placeholder="例如：陈明"/>
+			<br>
+            <label for="user-tel">* 联系电话</label>
+			<input type="tel" name="tel" id="user-tel" placeholder="方便我们联系您"/>
+			<br>
+			<label>最佳回电时间</label>
 			<select name="registration-type">
 				<option value="创业包">立即</option>
 				<option value="创业包">稍候</option>
@@ -345,10 +352,6 @@
 				<option value="创业包">今天</option>
 			</select>
 			<br>
-            <label for="user-name">* 姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</label>
-            <input type="text" name="name" id="user-name" placeholder="例如：陈明"/><br>
-            <label for="user-tel">* 联系电话</label>
-            <input type="tel" name="tel" id="user-tel" placeholder="方便我们联系您"/>
             <button><img src="./images/price/submit.png"></button>
         </div>
     </section>

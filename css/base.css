@@ -375,20 +375,19 @@ body > footer.foot-public {
 
 /*  其它页面侧边栏  */
 aside.sidebar {
+	position: fixed;
+	right: 0px;
+	top: 50%;
+	z-index: 9;
 	width: 125px;
-	height: 445px;
 	background: -webkit-linear-gradient(#09c8fe, #0365ff); /* Safari 5.1 - 6.0 */
 	background: -o-linear-gradient(#09c8fe, #0365ff); /* Opera 11.1 - 12.0 */
 	background: -moz-linear-gradient(#09c8fe, #0365ff); /* Firefox 3.6 - 15 */
 	background: linear-gradient(#09c8fe, #0365ff); /* 标准的语法 */
 	border-radius: 62px;
-	position: fixed;
-	right: 0px;
-	top: 300px;
 	color: #FFF;
 	padding: 30px 10px;
 	text-align: center;
-	z-index: 9;
 }
 	aside.sidebar > h3:nth-of-type(1){
 		padding-bottom: 5px;

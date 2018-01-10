@@ -48,11 +48,19 @@ function formSubmit(elem){
     var indexSidebar = document.querySelector('ul.index-sidebar-list');
     if(indexSidebar){
         var scrollHeight = indexSidebar.offsetHeight;
-        window.onresize = function(){
+        var rootHeight = window.innerHeight;
+        indexSidebar.style.top = (rootHeight - scrollHeight) / 2 + "px";
+        window.addEventListener('resize',function(){
             var rootHeight = window.innerHeight;
             // console.info(scrollHeight,rootHeight);
             indexSidebar.style.top = (rootHeight - scrollHeight) / 2 + "px";
-        }
+        });
+    }
+
+    // 其它页面侧边栏
+    var sidebar = document.querySelector('aside.sidebar');
+    if(sidebar){
+        sidebar.style.marginTop = "-" + sidebar.offsetHeight / 2 + "px";
     }
 })();
 

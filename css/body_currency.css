@@ -2712,7 +2712,7 @@ section.ten-strong {
 
 /*   申请快速报价   */
 section.apply-offer {
-	height: 445px;
+	height: 495px;
 	background-color: #3373c0;
 	text-align: center;
 	background-image: url('../images/price/apply-offer-bak.jpg');
@@ -2736,15 +2736,13 @@ section.apply-offer {
 			padding-right: 15px;
 		}
 		section.apply-offer select {
-			width: 180px;
+			width: 586px;
 			height: 50px;
 			border-radius: 5px;
 			font-size: 20px;
 			padding: 10px 20px;
-			margin-bottom: 18px;
-		}
-		section.apply-offer select:first-of-type {
-			margin-right: 80px;
+			margin-bottom: 15px;
+			color: #333;
 		}
 		section.apply-offer input {
 			width: 586px;
@@ -2752,17 +2750,14 @@ section.apply-offer {
 			border-radius: 5px;
 			font-size: 22px;
 			padding: 10px 20px;
-		}
-		section.apply-offer input:last-of-type {
-			margin-top: 18px;
-			margin-bottom: 50px;
+			margin-bottom: 15px;
 		}
 		section.apply-offer button {
 			cursor: pointer;
 			display: block;
 			width: 160px;
 			height: 45px;
-			margin: 0 auto;
+			margin: 25px auto;
 		}
 		
 /*                              小巨人 开始                          */
