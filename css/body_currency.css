@@ -1,0 +1,2055 @@
+body > section {
+	overflow: hidden;
+}
+/* CSS3 效果 */
+.transition-all-5,.transition-all-5 * {
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+div.main {
+	width: 1200px;
+	margin: 0 auto;
+	height: 100%;
+	position: relative;
+}
+
+/* 主题广告开始 */
+section.theme {
+	height: 625px;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: center;
+	position: relative;
+}
+	ul.theme-srcoll {
+		height: 625px;
+		width: 300%;
+		position: relative;
+		left: 0%;
+	}
+		ul.theme-srcoll > li {
+			float: left;
+			height: 100%;
+			width: 33.33%;
+		}
+	section.theme > p {
+		left: 0;
+		bottom: 90px;
+		height: 3px;
+		position: absolute;
+		width: 100%;
+		font-size: 0;
+		text-align: center;
+	}
+		section.theme > p > i {
+			display: inline-block;
+			height: 3px;
+			width: 32px;
+			background-color: #FFF;
+			margin-right: 8px;
+			cursor: pointer;
+		}
+		section.theme > p > i:last-child {
+			margin-right: 0;
+		}
+		section.theme > p > i.active {
+			background-color: #e91f3e;
+		}
+
+/* 主标题通用样式 */
+section.currency {
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: center;
+}
+	section.currency > div > h1 {
+		font-size: 39px;
+		color: #494949;
+		padding: 45px 0px 50px;
+	}
+	section.currency button.linkBtn {
+		width: 195px;
+		height: 50px;
+		color: #6c6c6c;
+		font-size: 20px;
+		margin-top: 60px;
+		border-radius: 5px;
+		border: 1px solid #d2d2d2;
+	}
+	section.currency button.linkBtn:hover {
+		color: #d0111b;
+		border: 1px solid #d0111b;
+	}
+	section.currency button.whiteBtn {
+		width: 195px;
+		height: 50px;
+		color: #FFF;
+		font-size: 20px;
+		margin-top: 60px;
+		border-radius: 5px;
+		border: 1px solid #FFF;
+	}
+	section.currency button.whiteBtn:hover {
+		background-color: #FFF;
+		color: #d80b14;
+	}
+
+
+/*                                                     首页 开始                                                */
+/*                                                     首页 开始                                                */
+/* 商标服务 */
+section.service {
+	background-color: #FFF;
+	height: 415px;
+}
+	ul.service-list {
+		height: 100px;
+	}
+		ul.service-list > li {
+			float: left;
+			width: 20%;
+			height: 100px;
+			cursor: pointer;
+			border-right: 1px solid #d2d2d2;
+		}
+		ul.service-list > li:last-child {
+			border-right: none;
+		}
+		ul.service-list > li:hover img {
+			transform: scale(1.3,1.3);
+		}
+			ul.service-list > li > img {
+				/* padding-bottom: 20px; */
+				position: relative;
+				top: -15px;
+			}
+			ul.service-list > li > h1 {
+				font-size: 22px;
+				color: #444444;
+				line-height: 30px;
+			}
+			ul.service-list > li > h3 {
+				font-size: 14px;
+				line-height: 20px;
+				color: #a4a4a4;
+			}
+
+/* 齐翔优势, 一目了然 */
+section.advantage {
+	height: 485px;
+	background-color: #cf1d20;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: center;
+	background-image: url('../images/index/advantage_bak.png');
+}
+	section.advantage > div > h1 {
+		color: #fff;
+	}
+	ul.advantage-list {
+		color: #FFF;
+		height: 215px;
+		margin-top: 30px;
+	}
+		ul.advantage-list > li {
+			float: left;
+			width: 20%;
+			cursor: pointer;
+		}
+			ul.advantage-list > li > h1 {
+				font-size: 24px;
+				line-height: 45px;
+				padding-top: 30px;
+			}
+			ul.advantage-list > li > h3 {
+				font-size: 14px;
+				line-height: 24px;
+			}
+			ul.advantage-list > li > div {
+				width: 115px;
+				height: 115px;
+				margin: 0 auto;
+				border-radius: 50%;
+				background-position: center;
+				background-color: #b20a12;
+			}
+			ul.advantage-list > li:hover > div {
+				background: linear-gradient(#f7ff19,#dc4917);
+				box-shadow: 0px 0px 15px #a81710;
+			}
+				ul.advantage-list > li:hover > div > p {
+					display: block;
+				}
+				ul.advantage-list > li:hover > div > img {
+					display: none;
+				}
+					ul.advantage-list > li > div > p {
+						color: #FFF;
+						line-height: 115px;
+						font-size: 30px;
+						display: none;
+					}
+
+/* 齐翔，一线品牌的共同选择 */
+section.choice {
+	height: 565px;
+	background-color: #FFF;
+}
+	section.choice > h1 {
+		background-color: #f5f5f5;
+		height: 130px;
+		padding-top: 65px;
+		font-size: 39px;
+		color: #494949;
+	}
+		ul.choice-type {
+			height: 70px;
+		}
+			ul.choice-type > li {
+				float: left;
+				width: 8.33%;
+				line-height: 70px;
+				color: #868686;
+				font-size: 18px;
+				cursor: pointer;
+			}
+			ul.choice-type > li.active {
+				font-size: 21px;
+				color: #d21e27;
+				position: relative;
+			}
+			ul.choice-type > li.active::after {
+				content: "";
+				position: absolute;
+				left: 0px;
+				bottom: 0px;
+				width: 100%;
+				height: 2px;
+				background-color: #d21e27;
+			}
+		ul.choice-list > li {
+			float: left;
+			height: 320px;
+			width: 190px;
+			margin-right: 12px;
+			position: relative;
+			cursor: pointer;
+			overflow: hidden;
+		}
+		ul.choice-list > li:last-child{
+			margin-right: 0px;
+		}
+		ul.choice-list > li:hover > div {
+			bottom: 0px;
+		}
+			ul.choice-list > li > div {
+				height: 165px;
+				width: 100%;
+				background-color: rgba(216, 11, 20, 0.8);
+				color: #FFF;
+				padding-top: 35px;
+				position: absolute;
+				left: 0px;
+				bottom: -165px;
+			}
+				ul.choice-list > li h2 {
+					font-size: 24px;
+				}
+				ul.choice-list > li h4 {
+					font-size: 14px;
+					padding-bottom: 10px;
+				}
+				ul.choice-list > li h5 {
+					font-size: 12px;
+				}
+
+/* 新闻中心 */
+section.news {
+	height: 855px;
+	background-color: #3a3a3a;
+}
+	section.news > div.main {
+		position: relative;
+	}
+	section.news > div > h1 {
+		color: #FFF;
+	}
+	section.news > div > a {
+		color: #a4a4a4;
+		position: absolute;
+		right: 20px;
+		top: 170px;
+	}
+	section.news > div > a:hover{
+		color: #005fc9;
+	}
+	ul.news-type {
+		height: 42px;
+		margin-bottom: 23px;
+	}
+		ul.news-type > li {
+			float: left;
+			height: 42px;
+			width: 125px;
+			line-height: 40px;
+			color: #fff;
+			border: 1px solid #FFF;
+			margin-right: 55px;
+			font-size: 20px;
+			cursor: pointer;
+		}
+		ul.news-type > li.active {
+			background-color: #d0111b;
+			border: none;
+			position: relative;
+		}
+		ul.news-type > li.active::after{
+			content: "";
+			position: absolute;
+			left: 53px;
+			bottom: -10px;
+			width: 0;
+			height: 0;
+			border-left: 10px solid transparent;
+			border-right: 10px solid transparent;
+			border-top: 10px solid #d0111b;
+		}
+	div.news-container {
+		height: 540px;
+		width: 100%;
+		overflow: hidden;
+	}
+		ul.news-content-list {
+			width: 300%;
+			height: 100%;
+			position: relative;
+			left: 0%;
+		}
+			ul.news-content-list > li {
+				width: 1200px;
+				float: left;
+				height: 100%;
+			}
+				ul.news-content-list > li > aside {
+					float: left;
+					height: 100%;
+					/* text-align: left; */
+				}
+				ul.news-content-list > li > aside:first-child {
+					width: 380px;
+					margin-right: 10px;
+				}
+					div.news-details {
+						padding: 20px;
+						height: 228px;
+						background-color: #FFF;
+					}
+						div.news-details > time {
+							width: 90px;
+							height: 27px;
+							background-color: #d0111b;
+							font-size: 13px;
+							color: #FFF;
+							display: block;
+							line-height: 27px;
+						}
+						div.news-details > h3 {
+							font-size: 18px;
+							color: #5c5c5c;
+							font-weight: bold;
+							padding: 15px 0px;
+							text-align: left;
+						}
+						div.news-details > p {
+							font-size: 13px;
+							color: #8a8888;
+							height: 80px;
+							text-indent: 1.5rem;
+							line-height: 20px;
+							overflow: hidden;
+							text-overflow: ellipsis;
+							position: relative;
+						}
+						div.news-details > p::after{
+							content: "......";
+							position: absolute;
+							right: 0;
+							bottom: 0;
+							width: 135px;
+							text-align: left;
+							background-color: #FFF;
+							text-indent: 0.5rem;
+						}
+							div.news-details > p > a {
+								position: absolute;
+								right: 15px;
+								bottom: 0;
+								color: #005fc9;
+								z-index: 9;
+							}
+
+				ul.news-content-list > li > aside:last-child{
+					width: 810px;
+				}
+					ul.news-list > li {
+						height: 173px;
+						background-color: #FFF;
+						margin-bottom: 10px;
+						font-size: 0;
+					}
+						ul.news-list > li > img {
+							vertical-align: top;
+							width: 245px;
+							height: 173px;
+						}
+						ul.news-list div.introduce {
+								padding: 20px;
+								width: 565px;
+								height: 173px;
+								background-color: #FFF;
+								display: inline-block;
+							}
+							ul.news-list div.introduce > time {
+									width: 90px;
+									height: 27px;
+									background-color: #d0111b;
+									font-size: 13px;
+									color: #FFF;
+									display: block;
+									line-height: 27px;
+								}
+								ul.news-list div.introduce > h3 {
+									font-size: 18px;
+									color: #404040;
+									padding: 15px 0px;
+									text-align: left;
+								}
+								ul.news-list div.introduce > p {
+									font-size: 15px;
+									color: #737373;
+									line-height: 20px;
+									text-align: left;
+									overflow: hidden;
+									text-overflow: ellipsis;
+									position: relative;
+								}
+								ul.news-list div.introduce > p::after{
+									content: "......";
+									position: absolute;
+									right: 0;
+									bottom: 0;
+									width: 135px;
+									text-align: left;
+									background-color: #FFF;
+									text-indent: 0.5rem;
+								}
+								ul.news-list div.introduce > p > a {
+										position: absolute;
+										right: 15px;
+										bottom: 0;
+										color: #005fc9;
+										z-index: 9;
+										font-size: 13px;
+									}
+
+/* 资质荣誉 开始 */
+section.honor {
+	height: 620px;
+	background-color: #FFF;
+}
+	ul.honor-list {
+		height: 300px;
+	}
+		ul.honor-list > li {
+			width: 190px;
+			height: 245px;
+			float: left;
+			margin-right: 62.5px;
+			box-shadow: 0px 0px 10px #969696;
+			position: relative;
+			top: 0px;
+			cursor: pointer;
+		}
+		ul.honor-list > li:last-child{
+			margin-right: 0px;
+		}
+			ul.honor-list > li > h4 {
+				font-size: 15px;
+				color: #6d6d6d;
+				padding-top: 25px;
+			}
+
+/*                        商标事务                      */
+/*                        商标事务                      */
+
+section.trademark {
+	height: 735px;
+	background-color: #FFF;
+}
+	ul.trademark-type {
+		height: 140px;
+		width: 785px;
+		margin: 0 auto;
+		padding-top: 70px;
+	}
+		ul.trademark-type > li {
+			height: 100%;
+			width: 340px;
+			float: left;
+			line-height: 70px;
+			font-size: 24px;
+			border: 1px solid #d80b14;
+		}
+		ul.trademark-type > li:first {
+			margin-right: 105px;
+		}
+		ul.trademark-type > li.active {
+			background-color: #d80b14;
+			color: #FFF;
+		}
+	div.trademark-process {
+		padding-top: 165px;
+		height: 535px;
+	}
+		div.trademark-process-list {
+			position: relative;
+			width: 570px;
+			height: 570px;
+			border-radius: 50%;
+			margin: 0 auto;
+		}
+			div.trademark-process-list > div {
+				height: 285px;
+				overflow: hidden;
+			}
+			div.trademark-process-list > img {
+				height: 570px;
+			}
+			div.trademark-process-list > article {
+				position: absolute;;
+				width: 96px;
+				height: 96px;
+				border-radius: 50%;
+				background-color: #afafaf;
+				border-width: 5px;
+				border-style: solid;
+				border-color: transparent;
+				text-align: center;
+				line-height: 86px;
+				color: #FFF;
+				font-size: 40px;
+				z-index: 1;
+				transform: scale(0);
+				transition: all 0.5s;
+			}
+				div.trademark-process-list > article::after {
+					content: "";
+					position: absolute;
+					width: 0;
+					height: 0px;
+					border-left: 6px solid transparent;
+					border-right: 6px solid transparent;
+					border-bottom: 10px solid #eae8ea;
+				}
+				div.trademark-process-list > article.active {
+					border-color: #f7cfd1;
+					background-color: #d90a14;
+					transform: scale(1);
+				}
+				div.trademark-process-list > article.active::after {
+					border-bottom: 10px solid #d90a14;
+				}
+			div.trademark-process-list > h1 {
+				position: absolute;
+				top: 180px;
+				left: 122px;
+				line-height: 90px;
+				color: #464646;
+				font-size: 40px;
+				border-bottom: 1px solid #eae8ea;
+				width: 325px;
+			}
+			div.trademark-process-list > p {
+				position: absolute;
+				display: inline-block;
+			}
+				div.trademark-process-list > p > span:first-child{
+					font-size: 24px;
+				}
+				div.trademark-process-list > p > span:last-child{
+					font-size: 18px;
+					color: #626262;
+				}
+			div.trademark-process-list > p:nth-of-type(1) {
+				left: -260px;
+	    		top: 290px;
+				text-align: right;
+			}
+			div.trademark-process-list > article:nth-of-type(1) {
+				left: -45px;
+    			top: 273px;
+			}
+			div.trademark-process-list > article:nth-of-type(1)::after {
+				top: -70px;
+				left: 44px;
+			    transform: rotate(10deg);
+			}
+			div.trademark-process-list > p:nth-of-type(2) {
+				left: -270px;
+	    		top: 90px;
+				text-align: right;
+			}
+			div.trademark-process-list > article:nth-of-type(2) {
+				left: 15px;
+    			top: 60px;
+			}
+			div.trademark-process-list > article:nth-of-type(2)::after {
+				top: -40px;
+			    left: 133px;
+			    transform: rotate(60deg);
+			}
+			div.trademark-process-list > p:nth-of-type(3) {
+				left: 130px;
+	    		top: -120px;
+				text-align: center;
+			}
+			div.trademark-process-list > article:nth-of-type(3) {
+				left: 250px;
+	    		top: -50px;
+			}
+			div.trademark-process-list > article:nth-of-type(3)::after {
+				top: 75px;
+				left: 160px;
+				transform: rotate(120deg);
+			}
+			div.trademark-process-list > p:nth-of-type(4) {
+				right: -270px;
+	    		top: 90px;
+				text-align: left;
+			}
+			div.trademark-process-list > article:nth-of-type(4) {
+				right: 10px;
+	    		top: 70px;
+			}
+			div.trademark-process-list > article:nth-of-type(4)::after {
+				top: 135px;
+			    left: 87px;
+			    transform: rotate(45deg);
+			}
+			div.trademark-process-list > p:nth-of-type(5) {
+				right: -300px;
+			    top: 280px;
+			    width: 240px;
+			    text-align: left;
+			}
+			div.trademark-process-list > article:nth-of-type(5) {
+				right: -45px;
+    			top: 273px;
+			}
+			div.trademark-process-list > article:nth-of-type(5)::after {
+				display:none;
+			}
+
+
+/* 注册需准备以下材料 开始 */
+section.material {
+	height: 550px;
+	background-color: #edebeb;
+}
+	section.material article {
+		background-color: #FFF;
+		border: 1px solid #d7d6d6;
+		border-radius: 3px;
+		width: 590px;
+		height: 330px;
+		padding: 50px 40px;
+		float: left;
+	}
+	section.material article:first-of-type{
+		margin-right: 20px;
+	}
+		article.material-name > div{
+			float: left;
+		}
+		article.material-name > div:first-child{
+			width: 150px;
+			height: 150px;
+			border: 2px dashed #d5d5d5;
+			border-radius: 50%;
+			margin-top: 55px;
+		}
+			article.material-name > div:first-child > img {
+				width: 100%;
+				height: 100%;
+			}
+		article.material-name > div:last-child{
+			width: 330px;
+			height: 100%;
+			text-align: left;
+			position: relative;
+			padding-left: 40px;
+		}
+			article.material-name > div > a {
+				display: block;
+				background-color: #FFF;
+				width: 150px;
+				height: 40px;
+				border: 1px  solid #d80b14;
+				border-radius: 3px;
+				color: #d80b14;
+				text-align: center;
+				line-height: 38px;
+				font-size: 20px;
+				position: absolute;
+				left: 40px;
+				bottom: 0px;
+			}
+			article.material-name > div > a:hover{
+				background-color: #d80b14;
+				color: #FFF;
+			}
+			article.material-name > div > h1 {
+				font-size: 26px;
+				padding-bottom: 10px;
+			}
+				ul.material-list > li {
+					font-size: 18px;
+					color: #626262;
+					line-height: 32px;
+				}
+					ul.material-list > li > i {
+						color: #d80b14;
+						font-style: normal;
+						margin-right: 6px;
+					}
+
+/* 齐翔商标五星优势 开始 */
+section.T-advantage{
+	height: 370px;
+	position: relative;
+	background-image: url('../images/trademark/advantage_bak.jpg');
+}
+	section.T-advantage > div > h1 {
+		color: #FFF;
+	}
+	ul.T-advantage-list {
+		width: 1020px;
+		margin: 0 auto;
+	}
+		ul.T-advantage-list > li {
+			width: 20%;
+			text-align: center;
+			float: left;
+			padding: 0px 35px;
+		}
+			ul.T-advantage-list > li > h2 {
+				font-size: 22px;
+				line-height: 45px;
+				padding-top: 15px;
+				color: #FFF;
+			}
+			ul.T-advantage-list > li > h3 {
+				font-size: 13px;
+				color: #FFF;
+			}
+
+/* 大品牌的选择，值得信赖 */
+section.big-brand {
+	height: 500px;
+	background-color: #FFF;
+}
+	ul.T-brand-list {
+		height: 320px;
+		margin-top: -20px;
+	}
+		ul.T-brand-list > li {
+			height: 320px;
+			width: 190px;
+			float: left;
+			margin-right: 10px;
+			position: relative;
+			cursor: pointer;
+			overflow: hidden;
+		}
+		ul.T-brand-list > li:last-child{
+			margin-right: 0px;
+		}
+			ul.T-brand-list > li:hover > div.big-brand-detailed {
+				bottom: 0%;
+			}
+			div.big-brand-detailed {
+				position: absolute;
+				left: 0px;
+				bottom: -160px;
+				width: 100%;
+				height: 160px;
+				background-color: #d80b14;
+				color: #FFF;
+				padding: 10px;
+			}
+				div.big-brand-detailed > h4 {
+					overflow: hidden;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					padding-top: 35px;
+					padding-bottom: 12px;
+				}
+				div.big-brand-detailed > span {
+					display: inline-block;
+					text-align: left;
+				}
+				div.big-brand-detailed > span > h6 {
+					line-height: 17px;
+				}
+
+/* 金牌顾问团 开始 */
+section.T-adviser {
+	height: 650px;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: center;
+	background-image: url('../images/trademark/adviser_bak.jpg');
+}
+	section.T-adviser > div.main {
+		overflow: hidden;
+	}
+		section.T-adviser > div > h1 {
+			color: #FFF;
+		}
+		ul.T-adviser-list {
+			height: 390px;
+			width: 200%;
+			position: relative;
+			left: 0%;
+		}
+			ul.T-adviser-list > li {
+				height: 390px;
+				width: 270px;
+				margin-right: 15px;
+				margin-left: 15px;
+				float: left;
+				background-color: rgba(240, 240, 240, 0.8);
+				box-shadow: 0px 0px 15px #505050;
+				cursor: pointer;
+				position: relative;
+				top: 0;
+				overflow: hidden;
+			}
+				ul.T-adviser-list > li > img {
+					padding-bottom: 20px;
+					width: 100%;
+				}
+					ul.T-adviser-list div > h2 {
+						font-size: 24px;
+						line-height: 40px;
+					}
+					ul.T-adviser-list div > h3 {
+						font-size: 18px;
+					}
+					ul.T-adviser-list div > h4 {
+						padding-top: 5px;
+						padding-bottom: 15px;
+						text-align: left;
+					}
+					ul.T-adviser-list div > img {
+						margin-top: 27px;
+					}
+				div.probably > h3 {
+					color: #626262;
+				}
+				div.detailed {
+					display: none;
+					color: #FFF;
+					height: 260px;
+					text-align: center;
+				}
+					div.detailed > h5 {
+						text-align: left;
+					}
+					div.detailed > a {
+						display: inline-block;
+						background-color: #FFF;
+						color: #d80b14;
+						text-align: center;
+						width: 90px;
+						height: 30px;
+						line-height: 30px;
+						border-radius: 5px;
+						margin-top: 35px;
+					}
+					div.detailed > h2 > span{
+						display: inline-block;
+						position: relative;
+						width: 75px;
+					}
+					div.detailed > h2 > span::after {
+						content: "";
+						position: absolute;
+						bottom: 0;
+						left: 24px;
+						width: 28px;
+						height: 1px;
+						background-color: #FFF;
+					}
+			ul.T-adviser-list > li:hover{
+				top: -35px;
+				height: 525px;
+				background: linear-gradient(#d80b14, #cd552e);
+			}
+			ul.T-adviser-list > li:hover > div.probably{
+				display: none;
+			}
+			ul.T-adviser-list > li:hover > div.detailed{
+				display: inline-block;
+			}
+
+		section.T-adviser p {
+			text-align: center;
+			font-size: 0;
+			position: absolute;
+			bottom: 60px;
+			left: 545px;
+		}
+			section.T-adviser p > i {
+				display: inline-block;
+				width: 45px;
+				height: 4px;
+				background-color: #FFF;
+				cursor: pointer;
+			}
+			section.T-adviser p > i:first-child{
+				margin-right: 20px;
+			}
+			section.T-adviser p > i.active {
+				background-color: #d80b14;
+			}
+
+
+/* 贴心售后，为您解忧 开始 */
+section.after-service {
+	height: 460px;
+	background-color: #FFF;
+}
+	ul.after-service-list {
+		height: 270px;
+		padding-top: 40px;
+	}
+	ul.after-service-list > li {
+		width: 310px;
+		height: 210px;
+		float: left;
+		padding: 50px 25px 0px;
+		border: 1px solid #929292;
+		border-radius: 10px;
+		position: relative;
+		padding: 25px;
+		margin: 0px 45px;
+	}
+		ul.after-service-list > li > aside {
+			position: absolute;
+			left: 110px;
+			top: -55px;
+			width: 90px;
+			height: 90px;
+			border: 7px solid #e3e3e3;
+			border-radius: 50%;
+			background-color: #FFF;
+			color: #979797;
+			font-size: 44px;
+			line-height: 76px;
+		}
+		ul.after-service-list > li > h2 {
+			font-size: 23px;
+			color: #3a3a3a;
+			padding-top: 20px;
+			padding-bottom: 12px;
+		}
+		ul.after-service-list > li > h4 {
+			font-size: 15px;
+			color: #6e6e6e;
+			text-align: left;
+			line-height: 25px;
+		}
+
+
+/* 更多免费服务开始 */
+section.more-service {
+	height: 330px;
+	background-color: #efeded;
+}
+	ul.more-service-list > li {
+		float: left;
+		width: 16.66%;
+	}
+		ul.more-service-list > li > h3 {
+			padding-top: 20px;
+			font-size: 19px;
+			color: #434343;
+		}
+
+/* 立即注册享受6大免费服务 开始 */
+section.enjoy-service {
+	height: 455px;
+	overflow: visible;
+	background-image: url('../images/trademark/enjoy_service_bak.jpg');
+}
+	section.enjoy-service > div.main {
+		height: 110%;
+		position: relative;
+		top: -10%;
+		background-repeat: no-repeat;
+		background-position: 0% bottom;
+		background-size: auto 100%;
+		background-image: url('../images/trademark/enjoy_service_1.png');
+		padding-top: 40px;
+		padding-left: 100px;
+	}
+		section.enjoy-service > div > h1 {
+			color: #FFF;
+		}
+			div.enjoy-service-form {
+				margin: 0 auto;
+				text-align: right;
+				width: 595px;
+			}
+			div.enjoy-service-form > span {
+				font-size: 24px;
+				color: #FFF;
+			}
+			div.enjoy-service-form > input {
+				width: 515px;
+				height: 60px;
+				font-size: 20px;
+				background-color: #FFF;
+				border-radius: 10px;
+				padding: 18px;
+				margin-bottom: 25px;
+			}
+			div.enjoy-service-form > button {
+				height: 57px;
+				width: 515px;
+				border-radius: 10px;
+				line-height: 57px;
+				font-size: 24px;
+				color: #710908;
+				background: linear-gradient(to bottom right, #fee46c, #fa8811);
+			}
+		div.enjoy-service-scroll {
+			height: 50px;
+			color: rgba(255, 255, 255, 0.75);
+			text-align: center;
+			overflow: hidden;
+			position: relative;
+			margin-top: 20px;
+		}
+			div.enjoy-service-scroll > img {
+				position: absolute;
+				top: 0px;
+				left: 32%;
+			}
+			div.enjoy-service-scroll > ul {
+				position: absolute;
+				top: 0%;
+				left: 35%;
+				text-align: left;
+			}
+				div.enjoy-service-scroll > ul > li {
+					height: 20%;
+				}
+
+
+
+/* 商标注册常见问题答疑 开始 */
+section.common-problem {
+	padding-bottom: 65px;
+	background-color: #FFF;
+}
+	ul.common-problem-type {
+		height: 110px;
+		width: 340px;
+		padding-top: 40px;
+		margin: 0 auto;
+	}
+		ul.common-problem-type > li {
+			width: 340px;
+			border: 1px solid #ca101a;
+			text-align: center;
+			line-height: 70px;
+			float: left;
+			font-size: 24px;
+			cursor: pointer;
+			color: #ca101a;
+		}
+	div.common-problem-container {
+		height: 305px;
+		background-color: #f2f2f2;
+		text-align: left;
+		position: relative;
+	}
+		div.common-problem-container > img {
+			margin-left: 65px;
+			margin-top: 20px;
+			margin-right: 65px;
+			vertical-align: top;
+		}
+		ul.common-problem-list {
+			display: inline-block;
+			list-style-type: disc;
+			width: 500px;
+			padding-top: 50px;
+		}
+			ul.common-problem-list > li {
+				font-size: 18px;
+				color: #838383;
+				height: 35px;
+				width: 100%;
+				position: relative;
+				line-height: 35px;
+			}
+			ul.common-problem-list > li:hover {
+				color: #ca101a;
+			}
+				ul.common-problem-list > li > a {
+					position: absolute;
+					top: 0px;
+					left: 0px;
+					overflow: hidden;
+					text-overflow:ellipsis;
+					white-space: nowrap;
+					line-height: 35px;
+					width: 100%;
+					height: 100%;
+				}
+
+
+		div.common-problem-container > a > button {
+			display: block;
+			width: 130px;
+			height: 35px;
+			font-size: 17px;
+			border: 1px solid #999;
+			color: #999;
+			position: absolute;
+			right: 78px;
+			bottom: 52px;
+		}
+		div.common-problem-container > a > button:hover {
+			color: #ca101a;
+			border: 1px solid #ca101a;
+		}
+
+
+
+/*                        商标变更                      */
+/*                        商标变更                      */
+/*流程及周期 开始*/
+section.cycle {
+	height: 435px;
+	background-color: #FFF;
+}
+	ul.cycle-list {
+		height: 200px;
+	}
+		ul.cycle-list > li {
+			float: left;
+			width: 20%;
+			position: relative;
+		}
+		ul.cycle-list > li::after {
+			content: "";
+			width: 0;
+			height: 0;
+			position: absolute;
+			right: -15px;
+			top: 79px;
+			border-top: 17px solid transparent;
+			border-bottom: 17px solid transparent;
+			border-left: 17px solid rgba(204,204,204,0.8);
+		}
+		ul.cycle-list > li::before {
+			content: "";
+			width: 0;
+			height: 0;
+			position: absolute;
+			right: -8px;
+			top: 79px;
+			border-top: 17px solid transparent;
+			border-bottom: 17px solid transparent;
+			border-left: 17px solid rgba(204,204,204,0.8);
+		}
+		ul.cycle-list > li:last-child::before{
+			display: none;
+		}
+		ul.cycle-list > li:last-child::after{
+			display: none;
+		}
+			div.cycle-item {
+				width: 192px;
+				height: 192px;
+				padding: 7px;
+				border-radius: 50%;
+				background-color: rgba(112,112,112,0);
+				cursor: pointer;
+				margin: 0 auto;
+			}
+				div.cycle-item div {
+					padding: 7px;
+					height: 100%;
+					border-radius: 50%;
+				}
+				div.cycle-item > div {
+					background-color: rgba(112,112,112,0);
+				}
+					div.cycle-item > div > div {
+						background-color: rgba(112,112,112,0.3);
+					}
+						div.cycle-item > div > div > div {
+							padding: 15px;
+							background-color: rgba(112,112,112,1);
+							color: #FFF;
+							font-size: 20px;
+							display: flex;
+							display: -webkit-flex;
+							display: -moz-flex;
+							display: -ms-flex;
+							justify-content: center;
+							-webkit-justify-content: center;
+							-moz-justify-content: center;
+							-ms-justify-content: center;
+							align-items: center;
+							-webkit-align-items: center;
+							-moz-align-items: center;
+							-ms-align-items: center;
+						}
+			ul.cycle-list > li:hover > div.cycle-item > div > div > div {
+				background-color: rgba(251,32,32,1);
+			}
+			ul.cycle-list > li:hover > div.cycle-item > div > div {
+				background-color: rgba(251,32,32,0.5);
+			}
+			ul.cycle-list > li:hover > div.cycle-item > div {
+				background-color: rgba(251,32,32,0.3);
+			}
+			ul.cycle-list > li:hover > div.cycle-item {
+				background-color: rgba(251,32,32,0.1);
+				transform: scale(1.05);
+				-webkit-transform: scale(1.05);
+				-moz-transform: scale(1.05);
+				transition: transform 0.5s;
+			}
+
+/* 用齐翔的专业为您的品牌保驾护航 开始 */
+section.protect {
+	height: 500px;
+	position: relative;
+	background-image: url('../images/trademark/advantage_bak.jpg');
+}
+	section.protect > div > h1 {
+		color: #FFF;
+	}
+	ul.protect-list {
+		height: 200px;
+	}
+		ul.protect-list {
+			width: 1020px;
+			margin: 0 auto;
+		}
+			ul.protect-list > li {
+				width: 20%;
+				text-align: center;
+				float: left;
+				padding: 0px 35px;
+			}
+				ul.protect-list > li > h2 {
+					font-size: 22px;
+					line-height: 45px;
+					padding-top: 15px;
+					color: #FFF;
+				}
+				ul.protect-list > li > h3 {
+					font-size: 13px;
+					color: rgba(255,255,255,0.7);
+				}
+					ul.protect-list > li > div {
+						width: 75px;
+						height: 95px;
+						border: 1px dashed #FFF;
+						border-radius: 20px;
+						margin: 0 auto;
+					}
+						ul.protect-list > li > div > div {
+							height: 100%;
+							background-color: #FFF;
+							border-radius: 20px;
+							position: relative;
+							top: -5px;
+							right: -8px;
+							padding-top: 21px;
+						}
+
+
+/*                        商标续展                      */
+/*                        商标续展                      */
+/* 商标续展办理流程 开始 */
+section.handle {
+	height: 435px;
+	background-color: #FFF;
+}
+	ul.handle-list {
+		height: 125px;
+		padding: 0% 5%;
+		border-bottom: 1px dashed #707070;
+		position: relative;
+	}
+	ul.handle-list::after {
+		content: "";
+		position: absolute;
+		right: -10px;
+		bottom: -8px;
+		width: 0px;
+		height: 0px;
+		border-top: 8px solid transparent;
+		border-bottom: 8px solid transparent;
+		border-left: 13px solid #707070;
+	}
+		ul.handle-list > li {
+			height: 100%;
+			float: left;
+			width: 16.66%;
+			position: relative;
+			cursor: pointer;
+		}
+		ul.handle-list > li:nth-child(even){
+			top: 100%;
+			margin-top: -5px;
+		}
+			ul.handle-list > li > h3 {
+				font-size: 18px;
+				padding-top: 15px;
+				white-space: nowrap;
+			}
+			ul.handle-list > li:nth-child(odd) > h3 {
+				padding-bottom: 15px;
+			}
+			ul.handle-list > li > div {
+				margin: 0 auto;
+				font-size: 30px;
+				width: 50px;
+				height: 50px;
+				background-color: #eaeaea;
+				color: #707070;
+				border-radius: 50%;
+				line-height: 50px;
+				position: relative;
+			}
+			ul.handle-list > li:hover > div {
+				background-color: #d80b14;
+				color: #FFF;
+			}
+			ul.handle-list > li > div::after {
+				content: "";
+				position: absolute;
+				left: 25px;
+				bottom: -30%;
+				width: 0;
+				height: 15px;
+				border-right: 1px dashed #707070;
+			}
+			ul.handle-list > li:nth-child(odd) > div::after {
+				bottom: -30%;
+			}
+			ul.handle-list > li:nth-child(even) > div::after {
+				top: -30%;
+			}
+			ul.handle-list > li > i {
+				display: block;
+				margin: 15px auto 0px;
+				width: 10px;
+				height: 10px;
+				background-color: #707070;
+				border-radius: 50%;
+			}
+			ul.handle-list > li:nth-child(even) > i {
+				margin: 0px auto 15px;
+			}
+
+/* 申请所需材料 开始 */
+section.E-material {
+	height: 450px;
+	background-color: #f2f2f2;
+}
+	section.E-material > div.main {
+		width: 850px;
+	}
+		section.E-material > div > div {
+			height: 255px;
+			float: left;
+		}
+		section.E-material > div > div:not(:last-child) {
+			margin-right: 95px;
+			width: 425px;
+		}
+			ul.E-material-list {
+				height: 255px;
+			}
+				ul.E-material-list > li {
+					padding: 8px 0px;
+				}
+					ul.E-material-list > li > div {
+						display: inline-block;
+						vertical-align: top;
+						width: 45px;
+						height: 45px;
+						padding: 7.5px;
+						margin-right: 30px;
+						border-radius: 50%;
+						background: linear-gradient(#ea1f2e,#fa6333);
+					}
+					ul.E-material-list > li > span {
+						display: inline-block;
+						width: 250px;
+						line-height: 45px;
+						text-align: left;
+					}
+			section.E-material > div > div button {
+				width: 130px;
+				height: 35px;
+				color: #d80b14;
+				border: 1px solid #d80b14;
+				position: absolute;
+				right: -150px;
+				bottom: 40px;
+				border-radius: 5px;
+				font-size: 18px;
+			}
+			section.E-material > div > div button:hover {
+				background-color: #d80b14;
+				color: #FFF;
+			}
+
+/*  用我们的专业为您的知识产权保驾护航 开始 */
+section.E-advantage{
+	height: 380px;
+	position: relative;
+}
+	ul.E-advantage-list {
+		width: 1020px;
+		height: 180px;
+		margin: 0 auto;
+	}
+		ul.E-advantage-list > li {
+			width: 20%;
+			text-align: center;
+			float: left;
+			padding: 0px 35px;
+		}
+			ul.E-advantage-list > li > h2 {
+				font-size: 22px;
+				line-height: 45px;
+				padding-top: 15px;
+			}
+			ul.E-advantage-list > li > h3 {
+				font-size: 16px;
+				color: #898989;
+			}
+
+
+/*                        商标转让                      */
+/*                        商标转让                      */
+/*商标转让需准备以下材料*/
+section.T-material {
+	height: 520px;
+	background-color: #FFF;
+}
+	ul.T-material-list {
+		height: 295px;
+	}
+		ul.T-material-list > li {
+			height: 295px;
+			float: left;
+		}
+		ul.T-material-list > li:nth-child(2) {
+			margin-right: 55px;
+		}
+			ul.T-material-list > li > i {
+				display: inline-block;
+				width: 130px;
+				height: 50px;
+				background-color: #d80b14;
+				border-radius: 10px;
+				color: #FFF;
+				line-height: 50px;
+				font-style: normal;
+				font-size: 24px;
+				margin-top: 122px;
+			}
+			ul.T-material-list > li > img {
+				margin: 0px 30px;
+			}
+			div.T-material-item {
+				width: 295px;
+				height: 295px;
+				border: 1px dotted #d80b14;
+				border-radius: 50%;
+				background-color: #FFF;
+				box-shadow: 0px 0px 25px #CCC;
+				padding: 75px 35px 75px 55px;
+			}
+				div.T-material-item > ul {
+					text-align: left;
+					list-style: square outside url('../images/transfer/material_3.svg');
+				}
+				ul.T-material-list > li:nth-child(2) ul {
+					margin: 0 auto;
+					width: 170px;
+				}
+					div.T-material-item > ul > li {
+						padding-bottom: 20px;
+						font-size: 18px;
+					}
+
+/* 大品牌的选择，值得信赖 */
+section.trust {
+	height: 440px;
+	background-color: #FFF;
+}
+	ul.trust-list {
+		height: 210px;
+	}
+		ul.trust-list > li {
+			height: 240px;
+			float: left;
+			width: 200px;
+			color: #FFF;
+			position: relative;
+			padding: 95px 20px;
+			cursor: pointer;
+			background-repeat: no-repeat;
+			background-size: 100% auto;
+			background-position: left bottom;
+		}
+		ul.trust-list > li:nth-child(1) {
+			background-image: url('../images/transfer/trust_bak_1.svg');
+		}
+		ul.trust-list > li:nth-child(2) {
+			background-image: url('../images/transfer/trust_bak_2.svg');
+		}
+		ul.trust-list > li:nth-child(3) {
+			background-image: url('../images/transfer/trust_bak_3.svg');
+		}
+		ul.trust-list > li:nth-child(4) {
+			background-image: url('../images/transfer/trust_bak_4.svg');
+		}
+		ul.trust-list > li:nth-child(5) {
+			background-image: url('../images/transfer/trust_bak_5.svg');
+		}
+		ul.trust-list > li:nth-child(6) {
+			background-image: url('../images/transfer/trust_bak_6.svg');
+		}
+		ul.trust-list > li:hover {
+			background-position-y: 1%;
+			padding-top: 80px;
+		}
+			ul.trust-list > li > img {
+				position: relative;
+				z-index: 1;
+			}
+			dl.trust-item {
+				display: none;
+				text-align: left;
+			}
+				dl.trust-item > dt {
+					padding-bottom: 10px;
+					overflow: hidden;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					font-size: 14px;
+				}
+				dl.trust-item > dd {
+					font-size: 12px;
+					padding-left: 10px;
+				}
+			ul.trust-list > li:hover > dl.trust-item {
+				display: block;
+			}
+			ul.trust-list > li:hover > img {
+				display: none;
+			}
+
+
+/*                        实用新型专利                      */
+/*                        实用新型专利                      */
+
+/* 这些专利都能注册 */
+section.these-patents {
+	height: 490px;
+	background-color: #FFF;
+}
+	ul.these-patents-type {
+		height: 55px;
+		width: 650px;
+		margin: 0 auto;
+	}
+		ul.these-patents-type > li {
+			height: 55px;
+			width: 190px;
+			border: 1px solid #d80b14;
+			color: #d80b14;
+			font-size: 24px;
+			float: left;
+			line-height: 53px;
+			cursor: pointer;
+		}
+		ul.these-patents-type > li:not(:last-child){
+			margin-right: 40px;
+		}
+		ul.these-patents-type > li.active {
+			background-color: #d80b14;
+			position: relative;
+			color: #FFF;
+		}
+		ul.these-patents-type > li.active::after {
+			content: "";
+			position: absolute;
+			left: 85px;
+			bottom: -10px;
+			border-left: 10px solid transparent;
+			border-right: 10px solid transparent;
+			border-top: 10px solid #d80b14;
+		}
+
+	ul.these-patents-list {
+		margin-top: 20px;
+		position: relative;
+	}
+		ul.these-patents-list > li {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 1200px;
+			border: 1px solid #f0f0f0;
+			background-color: #FFF;
+			padding: 35px 45px;
+			transform: scale(0);
+			transform-origin:0% 0%;
+			transition: all 0.5s;
+			opacity: 0;
+		}
+		ul.these-patents-list > li.active {
+			transform: scale(1);
+			opacity: 1;
+			transition: all 0.5s ease 0.5s;
+		}
+			ul.these-patents-list > li > div {
+				float: left;
+			}
+			ul.these-patents-list > li > div:first-child {
+				width: 190px;
+				height: 190px;
+				border-radius: 50%;
+				box-shadow: 0px 0px 15px #CCC;
+				background-color: #FFF;
+				padding: 20px;
+			}
+			ul.these-patents-list > li > div:last-child {
+				width: 918px;
+				text-align: left;
+				padding-left: 65px;
+			}
+				ul.these-patents-list > li > div > h2 {
+					font-size: 22px;
+					line-height: 40px;
+				}
+				ul.these-patents-list > li > div > h4 {
+					color: #707070;
+					line-height: 30px;
+				}
+				ul.these-patents-list > li > div > p {
+					height: 10px;
+				}
+
+/*  办理流程及资料  */
+section.process-patent {
+	height: 830px;
+	background-color: #FFF;
+}
+	section.process-patent > div.main {
+		height: auto;
+	}
+		ul.process-patent-list {
+			height: 385px;
+		}
+			ul.process-patent-list > li {
+				height: 175px;
+				width: 120px;
+				margin: 0px 25px;
+				float: left;
+			}
+				ul.process-patent-list > li > div {
+					width: 120px;
+					height: 120px;
+					border-radius: 50%;
+					padding: 37px;
+					position: relative;
+				}
+				ul.process-patent-list > li:nth-child(odd) > div {
+					background-color: #d80b14;
+					margin-bottom: 20px;
+				}
+					ul.process-patent-list > li:not(:last-child) > div::after {
+						content: "";
+					    position: absolute;
+					    right: -40px;
+					    width: 30px;
+					    height: 1px;
+					    background-color: #bfbfbf;
+					}
+					ul.process-patent-list > li:nth-child(odd) > div::after {
+						top: 100px;
+						transform: rotate(30deg);
+					}
+					ul.process-patent-list > li:nth-child(even) > div::after {
+						bottom: 100px;
+						transform: rotate(-30deg);
+					}
+				ul.process-patent-list > li:nth-child(even) > div {
+					background-color: #bfbfbf;
+					margin-top: 20px;
+				}
+				ul.process-patent-list > li > h3 {
+					color: #535353;
+					font-size: 20px;
+				}
+	div.nominal-type-patent {
+		height: 300px;
+		background-image: url('../images/new_patent/process_patent_bak.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: auto 100%;;
+	}
+		ul.nominal-type-list {
+			height: 300px;
+			width: 1060px;
+			margin: 0 auto;
+			position: relative;
+			top: -65px;
+		}
+			ul.nominal-type-list > li {
+				float: left;
+				width: 495px;
+				height: 300px;
+				color: #626262;
+			}
+			ul.nominal-type-list > li:not(:last-child){
+				margin-right: 70px;
+			}
+				ul.nominal-type-list > li > header {
+					line-height: 60px;
+					font-size: 26px;
+					background-color: #eee;
+				}
+				ul.nominal-type-item_A {
+					height: 240px;
+					background-color: #FFF;
+				}
+					ul.nominal-type-item_A > li {
+						float: left;
+						width: 50%;
+						position: relative;
+					}
+						ul.nominal-type-item_A > li > img {
+							margin-bottom: 30px;
+							margin-top: 55px;
+						}
+						ul.nominal-type-item_A > li:first-child::after {
+							content: "";
+							position: absolute;
+							right: 0px;
+							top: 91px;
+							width: 1px;
+							height: 57px;
+							background-color: #959595;
+						}
+							ul.nominal-type-item_A ul {
+								height: 240px;
+							}
+								ul.nominal-type-item_A ul > li:first-child::after {
+									content: "";
+									position: absolute;
+									top: 115px;
+									left: 95px;
+									width: 57px;
+									height: 1px;
+									background-color: #959595;
+								}
+									ul.nominal-type-item_A ul img {
+										margin-top: 30px;
+									}
+
+
+/* 齐翔商标五星优势 开始 */
+section.N-advantage {
+	height: 660px;
+	background-color: #f3f3f3;
+}
+	section.N-advantage svg {
+		height: 465px;
+	}
+	section.N-advantage h2 {
+		font-size: 22px;
+		position: absolute;
+	}
+	section.N-advantage h2 > span {
+		font-size: 16px;
+		color: #959595;
+	}
+	section.N-advantage h2:nth-of-type(1){
+		left: 200px;
+		top: 300px;
+		text-align: right;
+	}
+	section.N-advantage h2:nth-of-type(2){
+		left: 120px;
+    	top: 550px;
+		text-align: right;
+	}
+	section.N-advantage h2:nth-of-type(3){
+		right: 320px;
+    	top: 150px;
+		text-align: left;
+	}
+	section.N-advantage h2:nth-of-type(4){
+		right: 120px;
+    	top: 300px;
+		text-align: left;
+	}
+	section.N-advantage h2:nth-of-type(5){
+		right: 220px;
+    	top: 550px;
+		text-align: left;
+	}
+	section.N-advantage img {
+		position: absolute;
+	}
+	section.N-advantage img:nth-of-type(1){
+		left: 570px;
+    	top: 250px;
+	}
+	section.N-advantage img:nth-of-type(2){
+		left: 690px;
+    	top: 340px;
+	}
+	section.N-advantage img:nth-of-type(3){
+		left: 650px;
+    	top: 480px;
+	}
+	section.N-advantage img:nth-of-type(4){
+		left: 510px;
+    	top: 480px;
+	}
+	section.N-advantage img:nth-of-type(5){
+		left: 450px;
+    	top: 340px;
+	}
+
+/* 齐翔商标五星优势 开始 */
+section.N-brand {
+	height: 560px;
+	background-color: #FFF;
+	position: relative;
+}
+	section.N-brand > div.main {
+		z-index: 1;
+	}
+		section.N-brand > div.main > h1 {
+			color: #FFF;
+		}
+	section.N-brand > div.bak {
+		background-color: #363636;
+		height: 325px;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		z-index: 0;
+	}
+		ul.N-brand-list {
+			height: 380px;
+		}
+			ul.N-brand-list > li {
+				width: 230px;
+				height: 380px;
+				float: left;
+				overflow: hidden;
+				background-color: #f4f5f6;
+			}
+			ul.N-brand-list > li:not(:last-child){
+				margin-right: 12.5px;
+			}
+
+/* 专家团队 开始 */
+section.expert {
+	height: 535px;
+	background-image: url('../images/new_patent/expert_bak.jpg');
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: center;
+}
+	section.expert > div.main > h1 {
+		color: #FFF;
+	}
+		ul.expert-list {
+			height: 350px;
+		}
+			ul.expert-list > li {
+				height: 350px;
+				float: left;
+				width: 240px;
+				background-image: url('../images/new_patent/expert_4.svg');
+				background-size: 100% auto;
+				background-position: left bottom;
+				background-repeat: no-repeat;
+				margin: 0px 80px;
+				color: #FFF;
+			}
+				ul.expert-list > li > div {
+					width: 190px;
+					height: 190px;
+					border: 1px solid #FFF;
+					padding: 25px;
+					border-radius: 50%;
+					margin: 0 auto;
+				}
+					ul.expert-list > li > div > div {
+						border-radius: 50%;
+						height: 100%;
+						overflow: hidden;
+					}
+					ul.expert-list > li > div > span {
+						display: block;
+						width: 135px;
+						height: 40px;
+						border: 1px solid #FFF;
+						background-color: #363636;
+						color: #FFF;
+						line-height: 38px;
+						border-radius: 10px;
+					}
+				ul.expert-list > li > section {
+					margin-top: 60px;
+					padding: 12px 25px;
+					text-align: left;
+				}
+					ul.expert-list > li > section > h5 {
+						overflow: hidden;
+						white-space: nowrap;
+						text-overflow: ellipsis;
+					}
+
+/*  贴心服务，为您解忧  */
+section.intimate {
+	height: 545px;
+	background-image: url('../images/new_patent/intimate_bak.jpg');
+}
+	ul.intimate-list {
+		width: 961px;
+		height: 320px;
+		padding-top: 15px;
+		margin: 0 auto;
+	}
+		ul.intimate-list > li {
+			height: 320px;
+			width: 257px;
+			float: left;
+			padding: 20px;
+			padding-top: 130px;
+			position: relative;
+			background-image: url('../images/new_patent/intimate_bak.svg');
+			background-repeat: no-repeat;
+			background-position: center right;
+			background-size: auto 100%;
+			cursor: pointer;
+		}
+		ul.intimate-list > li:hover {
+			background-position-x: left;
+			color: #FFF;
+		}
+			ul.intimate-list > li:hover > h5 {
+				color: #FFF;
+			}
+		ul.intimate-list > li:not(:last-child){
+			margin-right: 95px;
+		}
+		ul.intimate-list > li > span {
+			content: "1";
+			position: absolute;
+			top: -45px;
+			left: 110px;
+			font-size: 70px;
+			color: #81191a;
+		}
+			ul.intimate-list > li > h2 {
+				padding-bottom: 35px;
+				font-size: 24px;
+			}
+			ul.intimate-list > li > h5 {
+				color: #626262;
+				line-height: 25px;
+				text-align: left;
+				font-size: 14px;
+			}
+
+/* 更多免费服务开始 */
+section.patent-service {
+	height: 530px;
+	background-color: #FFF;
+}
+	ul.patent-service-list {
+		height: 260px;
+		width: 960px;
+		margin: 0 auto;
+		padding-top: 55px;
+	}
+		ul.patent-service-list > li {
+			height: 260px;
+			width: 260px;
+			float: left;
+			font-size: 20px;
+			position: relative;
+		}
+		ul.patent-service-list > li:not(:last-child) {
+			margin-right: 90px;
+		}
+			ul.patent-service-list > li > div:first-child {
+				height: 210px;
+				padding-top: 110px;
+				padding-left: 20px;
+				padding-right: 20px;
+				color: #707070;
+				border: 1px solid #e5e5e5;
+				border-bottom: none;
+			}
+			ul.patent-service-list > li > div:last-child {
+				line-height: 48px;
+				height: 50px;
+				border: 1px solid #e5e5e5;;
+				color: #707070;
+			}
+			ul.patent-service-list > li > div:last-child:hover {
+				border: 1px solid #d80b14;;
+				color: #d80b14;
+			}
+				ul.patent-service-list > li > div > a {
+					display: block;
+					height: 100%;
+				}
+				ul.patent-service-list > li > div > aside {
+					width: 110px;
+					height: 110px;
+					position: absolute;
+					top: -55px;
+					left: 75px;
+				}

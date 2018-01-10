@@ -1,0 +1,257 @@
+@charset "UTF-8";
+
+header,section,nav,aside,article,footer{ display: block; }
+html,body{
+	width: 100%;
+	height: 100%;
+}
+body {
+	font-family: "Microsoft Yahei";
+	min-width: 1200px;
+}
+* {
+	margin: 0;
+	border: none;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul,ol,dl {
+	list-style: none;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+input {
+	outline: none;
+}
+button{
+	outline: none;
+	background: none;
+	cursor: pointer;
+}
+img {
+	vertical-align: bottom;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-weight: normal;
+}
+li > a {
+	display: block;
+	height: 100%;
+}
+div.main-public{
+	width: 1200px;
+	margin: 0 auto;
+	height: 100%;
+}
+
+::-webkit-input-placeholder { /* Chrome */
+	color: #aaa;
+	transition: opacity 250ms ease-in-out;
+}
+:focus::-webkit-input-placeholder {
+	opacity: 0.5;
+}
+:-ms-input-placeholder { /* IE 10+ */
+	color: #aaa;
+	transition: opacity 250ms ease-in-out;
+}
+:focus:-ms-input-placeholder {
+	opacity: 0.5;
+}
+::-moz-placeholder { /* Firefox 19+ */
+	color: #aaa;
+	opacity: 1;
+	transition: opacity 250ms ease-in-out;
+}
+:focus::-moz-placeholder {
+	opacity: 0.5;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+	color: #aaa;
+	opacity: 1;
+	transition: opacity 250ms ease-in-out;
+}
+:focus:-moz-placeholder {
+	opacity: 0.5;
+}
+
+
+/* 页头部分开始 */
+body > header.head-public {
+	height: 65px;
+	background-color: #FFF;
+	/* padding-top: 22px; */
+}
+	div.head-logo-public{
+		float: left;
+		height: 36px;
+	}
+	div.tel-head-public {
+		float: right;
+	}
+		header.head-public img {
+			padding-top: 15px;
+		}
+
+/* 主导航开始 */
+body > nav.nav-public {
+	height: 75px;
+	background-color: #d21d27;
+}
+	ul.nav-list-public {
+		height: 100%;
+		font-size: 16px;
+		color: #FFF;
+		text-align: center;
+	}
+		ul.nav-list-public > li {
+			width: 11.11%;
+			line-height: 75px;
+			float: left;
+			position: relative;
+		}
+		ul.nav-list-public > li:hover {
+			color: #535353;
+			background-color: #FFF;
+		}
+		ul.nav-list-public > li.active {
+			color: #535353;
+			background-color: #FFF;
+		}
+			ul.nav-list-public > li:hover > ul.subnav-public {
+				display: block;
+			}
+			ul.nav-list-public > li > a {
+				display: block;
+				height: 100%;
+			}
+
+		ul.subnav-public {
+			display: none;
+			width: 100%;
+			position: absolute;
+			left: 0px;
+			top: 100%;
+			color: #fff;
+			z-index: 99;
+		}
+			ul.subnav-public > li {
+				line-height: 35px;
+				text-align: center;
+				color: #FFF;
+				font-size: 15px;
+				background-color: rgba(210,30,40,0.8);
+				cursor: pointer;
+			}
+			ul.subnav-public > li:hover {
+				background-color: #d21d27;
+			}
+
+
+/* 页脚开始 */
+body > footer.foot-public {
+	height: 380px;
+	background-color: #3a3a3a;
+	border-top: 3px solid #c52123;
+	padding-top: 60px;
+	position: relative;
+}
+	footer.foot-public > div.main-public {
+		position: relative;
+		height: 260px;
+	}
+		div.return-top {
+			position: absolute;
+			right: -50px;
+			top: -150px;
+		}
+		ul.foot-summary-list{
+			float: left;
+			height: 100%;
+		}
+			ul.foot-summary-list > li {
+				float: left;
+				padding-right: 80px;
+			}
+			ul.foot-summary-list > li:last-child{
+				border-right: 1px solid #8e8e8e;
+				margin-right: 60px;
+			}
+				dl.foot-summary-type {
+					text-align: center;
+				}
+					dl.foot-summary-type > dt {
+						font-size: 17px;
+						color: #fff;
+						padding-bottom: 20px;
+					}
+					dl.foot-summary-type > dd {
+						font-size: 14px;
+						color: #8e8e8e;
+						line-height: 25px;
+					}
+						dl.foot-summary-type > dd > a:hover {
+							color: #3f86d7;
+						}
+
+	div.foot-contact {
+		float: left;
+		position: relative;
+	}
+		div.foot-contact > h3 {
+			color: #fff;
+			line-height: 25px;
+			padding-bottom: 10px;
+			font-size: 17px;
+		}
+		div.foot-contact > h2 {
+			color: #cc1e26;
+			font-weight: bold;
+			font-family: "Arial";
+			line-height: 35px;
+		}
+		div.foot-contact > h5 {
+			color: #8e8e8e;
+			line-height: 15px;
+		}
+			div.foot-contact img {
+				margin-right: 10px;
+				vertical-align: middle;
+			}
+
+	div.foot-QR-code {
+		float: right;
+		padding-left: 40px;
+	}
+		div.foot-QR-code > img {
+			margin-right: 15px;
+		}
+		div.foot-QR-code > h3 {
+			display: inline-block;
+			font-size: 19px;
+			color: #fff;
+			text-align: center;
+			padding-bottom: 45px;
+		}
+
+	footer.foot-public > p {
+		text-align: center;
+		padding-bottom: 10px;
+	}
+	footer.foot-public > footer {
+		height: 60px;
+		background-color: #4f4f4f;
+		line-height: 60px;
+		color: #bbb;
+		text-align: center;
+		font-size: 14px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+		footer.foot-public > footer > img {
+			vertical-align: text-bottom;
+		}
