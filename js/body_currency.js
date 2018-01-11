@@ -422,6 +422,37 @@
         var N_brandConfig = { origin: 'bottom', duration: 600, distance:'0px', viewFactor:1, scale: 0.5 };
         SR.reveal( N_brandLi, N_brandConfig );
     }
+
+    // 成功案例
+    var success = document.querySelector('ul.success-case-list');
+    if(success){
+        var successConfig = { origin: 'bottom', duration: 1000, distance:'0px', viewFactor:1, scale: 0.2 };
+        SR.reveal( success, successConfig );
+    }
+
+    // 用齐翔的专业为您的品牌保驾护航
+    var w_protect = document.querySelector('ul.W-protect-list');
+    if(w_protect){
+        var w_protectDiv = w_protect.querySelectorAll('div');
+        var w_protectConfig = { origin: 'top', duration: 2000, distance:'200px', viewFactor:1, scale: 0.2 };
+        SR.reveal( w_protectDiv, w_protectConfig );
+    }
+
+    // 登记版权的好处
+    var rBenefit = document.querySelector('ul.register-benefit-list');
+    if(rBenefit){
+        var rBenefitLi = rBenefit.querySelectorAll('li');
+        var rBenefitConfig = { origin: 'right', duration: 800, distance:'300px', viewFactor:1, scale: 0.8 };
+        SR.reveal( rBenefitLi, rBenefitConfig, 100 );
+    }
+
+    // 软著版权登记流程及资料
+    var wProcess = document.querySelector('ul.W-process-list');
+    if(wProcess){
+        var wProcessLi = wProcess.querySelectorAll('li');
+        var wProcessConfig = { origin: 'right', duration: 400, distance:'200px', viewFactor:1, scale: 1 };
+        SR.reveal( wProcessLi, wProcessConfig, 200 );
+    }
 })();
 /**
  * @file 禁止pc浏览器使用ctrl/cammond + +/- 或 Windows下ctrl + 滚轮 缩放页面 (prevent borwser zoom)

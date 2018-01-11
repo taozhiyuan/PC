@@ -251,6 +251,8 @@ section.choice {
 				background-color: rgba(216, 11, 20, 0.8);
 				color: #FFF;
 				padding-top: 35px;
+				padding-left: 15px;
+				padding-right: 15px;
 				position: absolute;
 				left: 0px;
 				bottom: -165px;
@@ -327,6 +329,7 @@ section.news {
 			height: 100%;
 			position: relative;
 			left: 0%;
+			transition: left 0.5s;
 		}
 			ul.news-content-list > li {
 				width: 1200px;
@@ -363,6 +366,9 @@ section.news {
 							padding: 15px 0px;
 							text-align: left;
 						}
+						div.news-details > h3:hover{
+							color: #005fc9;
+						}
 						div.news-details > p {
 							font-size: 13px;
 							color: #8a8888;
@@ -374,14 +380,18 @@ section.news {
 							position: relative;
 						}
 						div.news-details > p::after{
-							content: "......";
+							content: "...";
 							position: absolute;
 							right: 0;
 							bottom: 0;
-							width: 135px;
+							width: 110px;
+							height: 20px;
+							padding-left: 20px;
 							text-align: left;
-							background-color: #FFF;
 							text-indent: 0.5rem;
+							background: linear-gradient(to right, transparent, #FFF 15%);
+							background: -webkit-linear-gradient(left,transparent, #FFF 15%);
+
 						}
 							div.news-details > p > a {
 								position: absolute;
@@ -426,6 +436,12 @@ section.news {
 									color: #404040;
 									padding: 15px 0px;
 									text-align: left;
+									overflow: hidden;
+									white-space: nowrap;
+									text-overflow: ellipsis;
+								}
+								ul.news-list div.introduce > h3:hover{
+									color: #005fc9;
 								}
 								ul.news-list div.introduce > p {
 									font-size: 15px;
@@ -435,15 +451,20 @@ section.news {
 									overflow: hidden;
 									text-overflow: ellipsis;
 									position: relative;
+									height: 40px;
 								}
 								ul.news-list div.introduce > p::after{
-									content: "......";
+									content: "...";
 									position: absolute;
 									right: 0;
 									bottom: 0;
-									width: 135px;
+									width: 105px;
+									height: 20px;
 									text-align: left;
-									background-color: #FFF;
+									padding-left: 20px;
+									background: -webkit-linear-gradient(left, transparent, #fff 15%);
+									background: linear-gradient(to right, transparent, #fff 15%);
+									/*background-color: #FFF;*/
 									text-indent: 0.5rem;
 								}
 								ul.news-list div.introduce > p > a {
@@ -503,7 +524,7 @@ section.trademark {
 			font-size: 24px;
 			border: 1px solid #d80b14;
 		}
-		ul.trademark-type > li:first {
+		ul.trademark-type > li:first-child {
 			margin-right: 105px;
 		}
 		ul.trademark-type > li.active {
@@ -947,7 +968,11 @@ section.after-service {
 		position: relative;
 		padding: 25px;
 		margin: 0px 45px;
+		cursor: pointer;
 	}
+		ul.after-service-list > li:hover {
+			border-color: #d80b14;
+		}
 		ul.after-service-list > li > aside {
 			position: absolute;
 			left: 110px;
@@ -961,6 +986,10 @@ section.after-service {
 			font-size: 44px;
 			line-height: 76px;
 		}
+		ul.after-service-list > li:hover > aside {
+			border-color: #d80b14;
+			color: #d80b14;
+		}
 		ul.after-service-list > li > h2 {
 			font-size: 23px;
 			color: #3a3a3a;
@@ -972,6 +1001,8 @@ section.after-service {
 			color: #6e6e6e;
 			text-align: left;
 			line-height: 25px;
+			max-height: 100px;
+			overflow: hidden;
 		}
 
 
@@ -1330,6 +1361,14 @@ section.handle {
 				font-size: 18px;
 				padding-top: 15px;
 				white-space: nowrap;
+			}
+			ul.handle-list > li:nth-child(2) > h3 {
+				position: relative;
+				left: -20px;
+			}
+			ul.handle-list > li:nth-child(5) > h3 {
+				position: relative;
+				left: -50px;
 			}
 			ul.handle-list > li:nth-child(odd) > h3 {
 				padding-bottom: 15px;
@@ -2039,7 +2078,7 @@ section.patent-service {
 				color: #707070;
 			}
 			ul.patent-service-list > li > div:last-child:hover {
-				border: 1px solid #d80b14;;
+				border: 1px solid #d80b14;
 				color: #d80b14;
 			}
 				ul.patent-service-list > li > div > a {
@@ -2053,3 +2092,396 @@ section.patent-service {
 					top: -55px;
 					left: 75px;
 				}
+
+
+/*                        软件著作权 开始                      */
+/*                        软件著作权 开始                      */
+/* 登记版权的好处 开始 */
+section.register-benefit {
+	height: 430px;
+	background-color: #FFF;
+}
+	ul.register-benefit-list {
+		height: 200px;
+		width: 1040px;
+		margin: 0 auto;
+		padding-top: 20px;
+	}
+		ul.register-benefit-list > li {
+			float: left;
+			width: 230px;
+			height: 180px;
+			border: 1px solid #d80b14;
+			position: relative;
+			padding: 0px 30px;
+		}
+		ul.register-benefit-list > li:not(:last-child){
+			margin-right: 40px;
+		}
+			ul.register-benefit-list > li > div {
+				width: 60px;
+				height: 60px;
+				padding: 12px;
+				position: absolute;
+				left: 85px;
+				top: -30px;
+				border: 1px solid #d80b14;
+				background-color: #FFF;
+				border-radius: 50%;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+			ul.register-benefit-list > li > h2 {
+				padding-top: 50px;
+				padding-bottom: 15px;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				position: relative;
+			}
+			ul.register-benefit-list > li > h2::after {
+				content: "";
+				width: 72px;
+				height: 1px;
+				background-color: #000;
+				position: absolute;
+				left: 48px;
+				bottom: 7px;
+			}
+			ul.register-benefit-list > li > h4 {
+				color: #707070;
+			}
+
+/*  软著版权登记流程及资料 开始  */
+section.W-process {
+	height: 745px;
+	background-color: #f2f2f2;
+}
+	ul.W-process-list {
+		height: 150px;
+		width: 1075px;
+		margin: 0 auto;
+	}
+		ul.W-process-list > li {
+			height: 150px;
+			width: 20%;
+			float: left;
+			position: relative;
+			border-bottom: 2px solid #FFF;
+			cursor: pointer;
+		}
+			ul.W-process-list > li:hover {
+				border-color: #d80b14;
+			}
+			ul.W-process-list > li:hover::after {
+				content: "";
+				width: 0px;
+				height: 0px;
+				position: absolute;
+				bottom: 0px;
+				left: 95px;
+				border-left: 10px solid transparent;
+				border-right: 10px solid transparent;
+				border-bottom: 10px solid #d80b14;
+			}
+				ul.W-process-list > li:hover > div {
+					background-position-y: -61px;
+				}
+			ul.W-process-list > li > h3 {
+				font-size: 20px;
+			}
+			ul.W-process-list > li > h4 {
+				color: #707070;
+				line-height: 40px;
+			}
+			ul.W-process-list > li > div {
+				background-color: #FFF;
+				border-radius: 50%;
+				width: 60px;
+				height: 60px;
+				padding: 12px;
+				margin: 0 auto;
+				background-repeat: no-repeat;
+				background-position: top center;
+			}
+			ul.W-process-list > li:nth-child(1) > div {
+				background-image: url('../images/writings/W_process_1.png');
+			}
+			ul.W-process-list > li:nth-child(2) > div {
+				background-image: url('../images/writings/W_process_2.png');
+			}
+			ul.W-process-list > li:nth-child(3) > div {
+				background-image: url('../images/writings/W_process_3.png');
+			}
+			ul.W-process-list > li:nth-child(4) > div {
+				background-image: url('../images/writings/W_process_4.png');
+			}
+			ul.W-process-list > li:nth-child(5) > div {
+				background-image: url('../images/writings/W_process_5.png');
+			}
+
+	section.W-process > div > h2 {
+		font-size: 30px;
+		line-height: 120px;
+	}
+		ul.W-data-list {
+			height: 300px;
+			width: 900px;
+			margin: 0 auto;
+		}
+			ul.W-data-list > li {
+				width: 250px;
+				overflow: hidden;
+				float: left;
+			}
+			ul.W-data-list > li:not(:last-child) {
+				margin-right: 75px;
+			}
+				ul.W-data-list > li > img {
+					height: 130px;
+				}
+				ul.W-data-list > li > h2 {
+					height: 100px;
+					color: #707070;
+					background-color: #FFF;
+					padding: 0px 30px;
+					font-size: 20px;
+					display: flex;
+					display: -webkit-flex;
+					align-items: center;
+					-webkit-align-items: center;
+					justify-content: center;
+					-webkit-justify-content: center;
+				}
+					ul.W-data-list > li button {
+						width: 100%;
+						height: 50px;
+						line-height: 48px;
+						font-size: 20px;
+						color: #d80b14;
+						border: 1px solid #d80b14;
+					}
+					ul.W-data-list > li button:hover {
+						background-color: #d80b14;
+						color: #FFF;
+					}
+
+
+/*  用齐翔的专业为您的品牌保驾护航  */
+section.W-protect {
+	height: 495px;
+	background-image: url('../images/writings/W_protect_bak.jpg');
+}
+	section.W-protect > div  > h1 {
+		color: #FFF;
+	}
+	ul.W-protect-list {
+		height: 265px;
+	}
+		ul.W-protect-list > li {
+			width: 20%;
+			height: 265px;
+			float: left;
+			color: #FFF;
+			padding: 0px 45px;
+			background-image: url('../images/writings/W_protect_bak.jpg');
+		}
+		ul.W-protect-list > li > div {
+			width: 100px;
+			height: 150px;
+			margin: 0 auto;
+			padding-top: 40px;
+			background-image: url('../images/writings/protect_bak.svg');
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+		ul.W-protect-list > li > h3 {
+			padding-top: 30px;
+			padding-bottom: 15px;
+			font-size: 20px;
+		}
+		ul.W-protect-list > li > h4 {
+			color: #dcdcdc;
+		}
+
+/*  成功案例 开始  */
+section.success-case {
+	height: 640px;
+	background-color: #FFF;
+}
+	ul.success-case-list {
+		width: 1100px;
+		height: 440px;
+	}
+		ul.success-case-list > li {
+			float: left;
+			width: 270px;
+			height: 205px;
+			border: 1px solid #e5e5e5;
+			margin-right: 5px;
+			margin-bottom: 25px;
+			overflow: hidden;
+		}
+		ul.success-case-list > li:nth-child(4n){
+			margin-right: 0px;
+		}
+			ul.success-case-list > li > img {
+				width: 100%;
+				height: 100%;
+			}
+
+
+/*                        软件著作权 开始                      */
+/*                        软件著作权 开始                      */
+/* 作品版权——登记版权的好处 */
+section.works-benefit {
+	height: 440px;
+	background-color: #FFF;
+}
+	ul.works-benefit-list {
+		height: 240px;
+	}
+		ul.works-benefit-list > li {
+			float: left;
+			width: 25%;
+			padding: 0px 75px;
+			cursor: pointer;
+		}
+			ul.works-benefit-list > li:hover > div {
+				background-position: right;
+			}
+				ul.works-benefit-list > li:hover > div > aside {
+					background-color: #d80b14;
+				}
+			ul.works-benefit-list > li > div {
+				width: 137px;
+				height: 127px;
+				background-image: url('../images/works/works_benefit_bak.svg');
+				background-repeat: no-repeat;
+				background-size: auto 100%;
+				margin: 0 auto;
+				font-size: 20px;
+				padding: 0px 25px;
+				position: relative;
+				display: flex;
+				display: -webkit-flex;
+				justify-content: center;
+				-webkit-justify-content: center;
+				align-items: center;
+				-webkit-align-items: center;
+			}
+			ul.works-benefit-list > li > div::after {
+				content: "";
+				position: absolute;
+				left: 35px;
+				bottom: -16px;
+				width: 72px;
+				height: 1px;
+				background-color: #000;
+			}
+				ul.works-benefit-list > li > div > aside {
+					display: block;
+					position: absolute;
+					top: -28px;
+					left: 40px;
+					width: 55px;
+					height: 55px;
+					padding: 10px;
+					background-color: #a0a0a0;
+					border-radius: 50%;
+				}
+					ul.works-benefit-list > li > div img {
+						vertical-align: top;
+					}
+			ul.works-benefit-list > li > h4 {
+				color: #707070;
+				padding-top: 32px;
+			}
+
+/*  作品版权登记流程及资料  开始  */
+section.works-process {
+	height: 415px;
+	background-image: url('../images/works/works_process_bak.png');
+}
+	section.works-process > div > h1 {
+		color: #FFF;
+	}
+	ul.works-process-list {
+		height: 190px;
+		padding-top: 15px;
+		color: #FFF;
+	}
+		ul.works-process-list > li {
+			float: left;
+			width: 20%;
+		}
+			ul.works-process-list > li > div {
+				width: 100px;
+				height: 100px;
+				border: 2px solid #FFF;
+				margin: 0 auto;
+				border-radius: 50%;
+				padding: 28px;
+				position: relative;
+			}
+			ul.works-process-list > li:not(:last-child) > div::after {
+				content: "";
+				position: absolute;
+				top: 37px;
+				right: -85px;
+				width: 21px;
+				height: 25px;
+				background-image: url('../images/works/works_process_6.svg');
+			}
+			ul.works-process-list > li > h2 {
+				font-size: 20px;
+				padding-top: 22px;
+				padding-bottom: 10px;
+			}
+
+section.works-data {
+	height: 380px;
+	padding-top: 45px;
+	background-color: #FFF;
+}
+	ul.works-data-list {
+		height: 280px;
+	}
+	ul.works-data-list > li {
+		width: 250px;
+		float: left;
+		overflow: hidden;
+	}
+	ul.works-data-list > li:not(:last-child) {
+		margin-right: 66.6px;
+	}
+		ul.works-data-list > li > img {
+			height: 130px;
+		}
+		ul.works-data-list > li > h3 {
+			height: 100px;
+			color: #707070;
+			padding: 0px 25px;
+			font-size: 18px;
+			display: flex;
+			display: -webkit-flex;
+			justify-content: center;
+			align-items: center;
+			-webkit-justify-content: center;
+			-webkit-align-items: center;
+			border-left: 1px solid #e5e5e5;
+			border-right: 1px solid #e5e5e5;
+			border-top: 1px solid #e5e5e5;
+		}
+			ul.works-data-list > li > a > button {
+				width: 100%;
+				height: 50px;
+				line-height: 48px;
+				color: #d80b14;
+				border: 1px solid #d80b14;
+				font-size: 20px;
+			}
+			ul.works-data-list > li > a > button:hover {
+				color: #FFF;
+				background-color: #d80b14;
+			}
